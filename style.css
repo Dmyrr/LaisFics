@@ -380,6 +380,12 @@ footer a {
         line-height: 1.7rem;
     }
 
+    #elementos img:nth-child(1) {
+        top: -20px;
+        left: -60px;
+        scale: 90%;
+    }
+
     #elementos img:nth-child(2) {
         bottom: -75px;
         right: -50px;
