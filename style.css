@@ -374,6 +374,11 @@ footer a {
 
 @media (max-width:600px) {
 
+    #descricao h1 {
+        font-size: 1.7rem;
+        line-height: 1.7rem;
+    }
+
     #elementos img:nth-child(2) {
         bottom: -70px;
         right: -50px;
