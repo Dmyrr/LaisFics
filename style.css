@@ -42,20 +42,20 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
     padding: 20px;
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 /* ------------------------------------------------ */
 
 #container-principal {
-    padding: 40px;
+    padding: 30px;
     position: relative;
     max-width: 600px;
     background-color: var(--cor1);
-    border-radius: 100px;
+    border-radius: 150px 150px 50px 50px;
     box-shadow: 3px 7px 8px #00000077;
     min-height: 100vh;
 }
@@ -70,20 +70,21 @@ body {
 /* ------------------------------------------------ */
 
 #elementos img {
-    max-width: 200px;
+    max-width: 175px;
     position: absolute;
     z-index: 1;
     pointer-events: none;
+    overflow: hidden;
 }
 
 #elementos img:nth-child(1) {
-    top: -40px;
-    left: -70px;
+    top: -10px;
+    left: -60px;
 }
 
 #elementos img:nth-child(2) {
-    bottom: -40px;
-    right: -70px;
+    bottom: -50px;
+    right: -50px;
 }
 
 /* ------------------------------------------------ */
@@ -174,7 +175,9 @@ body {
 
 .titulo-topico span {
     color: var(--cor4);
-    font-size: 1.5rem;
+    font-size: 2rem;
+    position: relative;
+    top: 4px;
 }
 
 /* ------------------------------------------------ */
@@ -239,7 +242,7 @@ body {
 }
 
 .livro-botao img {
-    max-height: 150%;
+    max-height: 200%;
     mask-image: linear-gradient(90deg, transparent 0%, #ffffff 40%);
     -webkit-mask-image: linear-gradient(90deg, transparent 0%, #ffffff 40%);
 }
@@ -247,7 +250,7 @@ body {
 .livro-botao p {
     font-family: "Dancing Script", cursive;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .list-links {
@@ -259,6 +262,7 @@ body {
     top: -30px;
     z-index: 1;
     padding-top: 50px;
+    padding-inline: 15px;
     padding-bottom: 20px;
     background-color: var(--cor7);
     border-radius: 0px 0px 50px 50px;
@@ -366,6 +370,31 @@ footer a {
     font-weight: 500;
 }
 
+/* ------------------------------ */
+
 @media (max-width:600px) {
-    
+
+    #elementos img:nth-child(2) {
+        bottom: -70px;
+        right: -50px;
+        scale: 70%;
+    }
+
+    .livro-botao p {
+        font-size: 1.5rem;
+    }
+
+    .livro-botao img {
+        max-height: 110%;
+    }
+
+    #redes-sociais a p {
+        font-size: 0.8rem;
+    }
+
+    #redes-sociais a span {
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: var(--cor1);
+    }
 }
